@@ -1,6 +1,10 @@
 import React from "react"
 
 class TodoItem extends React.Component {
+    componentWillUnmount() {
+        alert("Item to be deleted");
+    }
+
     render() {
         const {completed, id, title} = this.props.todo;
 
